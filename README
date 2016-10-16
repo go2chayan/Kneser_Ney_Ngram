@@ -1,0 +1,20 @@
+README
+======
+
+I did it as a part of homework problem in the Statistical Speech and Language Processing course by Prof Daniel Gildea (https://www.cs.rochester.edu/~gildea/) in Fall 2015. Here I implemented a Kneser-Ney Bigram language model calculating algorithm
+for English Language.
+==========================================================================================================
+
+Task: Implement a Kneser Ney bigram language model, training on the file training.eng and testing on test.eng. See test files kn.train, kn.test, kn.out.
+
+Coded by: Md Iftekhar Tanveer (itanveer@cs.rochester.edu)
+
+I have implemented the Kneser Ney model (please check hw3.py). The perplexity as tested on test.eng is 76.846241
+
+Discussion
+----------
+It is interesting to see the plot of MLE and Kneser Ney estimate on a log-log scale as shown in figure_1.png. 
+
+As we know, MLE (Maximum Likelihood Estimation) contains a large number of zeros. This is represented in the plot too as the plot for MLE got terminated for a much higher value than Kneser Ney.
+
+This illustrates the purpose of smoothing (i.e. allowing much smaller bigram probabilities without making it zero)
